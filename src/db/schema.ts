@@ -1,4 +1,5 @@
 import {
+  boolean,
   index,
   integer,
   pgTable,
@@ -14,15 +15,25 @@ export const schools = pgTable(
   {
     id: uuid("id").defaultRandom().primaryKey(),
     name: varchar("name", { length: 180 }).notNull(),
-    abbreviation: varchar("abbreviation", { length: 16 }).notNull(),
+    abbreviation: varchar("abbreviation", { length: 16 }),
     slug: varchar("slug", { length: 180 }).notNull(),
-    bandName: varchar("band_name", { length: 180 }).notNull(),
+    bandName: varchar("band_name", { length: 180 }),
     description: text("description"),
     location: varchar("location", { length: 180 }),
     conference: varchar("conference", { length: 32 }),
     logoUrl: text("logo_url"),
-    primaryColor: varchar("primary_color", { length: 32 }).notNull(),
+    primaryColor: varchar("primary_color", { length: 32 }),
     secondaryColor: varchar("secondary_color", { length: 32 }),
+    websiteUrl: text("website_url"),
+    scorecardId: integer("scorecard_id"),
+    institutionType: varchar("institution_type", { length: 80 }),
+    address: text("address"),
+    city: varchar("city", { length: 120 }),
+    state: varchar("state", { length: 2 }),
+    hasMarchingBand: boolean("has_marching_band").notNull().default(false),
+    bandSourceUrl: text("band_source_url"),
+    directorySourceUrl: text("directory_source_url"),
+    dataVerifiedAt: timestamp("data_verified_at", { withTimezone: true }),
     totalScore: integer("total_score").notNull().default(0),
     createdAt: timestamp("created_at", { withTimezone: true })
       .defaultNow()
@@ -32,9 +43,12 @@ export const schools = pgTable(
       .notNull(),
   },
   (table) => [
-    uniqueIndex("schools_name_unique").on(table.name),
+    index("schools_name_idx").on(table.name),
     uniqueIndex("schools_slug_unique").on(table.slug),
+    uniqueIndex("schools_scorecard_id_unique").on(table.scorecardId),
     index("schools_total_score_idx").on(table.totalScore),
+    index("schools_state_idx").on(table.state),
+    index("schools_has_marching_band_idx").on(table.hasMarchingBand),
   ],
 );
 

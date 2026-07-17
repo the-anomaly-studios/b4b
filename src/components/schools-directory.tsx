@@ -3,15 +3,48 @@
 import Link from "next/link";
 import { useState } from "react";
 import { ArrowRight, MapPin, Search } from "lucide-react";
-import { schools } from "@/lib/data";
 import { numberFormatter } from "@/lib/utils";
 
-export function SchoolsDirectory() {
-  const [query, setQuery] = useState("");
-  const [conference, setConference] = useState("all");
+export type DirectorySchool = {
+  id: string;
+  slug: string;
+  name: string;
+  abbreviation: string | null;
+  bandName: string | null;
+  location: string | null;
+  description: string | null;
+  primaryColor: string | null;
+  totalScore: number;
+  state: string | null;
+  hasMarchingBand: boolean;
+  institutionType: string | null;
+};
 
-  const conferences = [
-    ...new Set(schools.map((school) => school.conference)),
+function initials(school: DirectorySchool) {
+  if (school.abbreviation) return school.abbreviation.slice(0, 3);
+  return school.name
+    .split(/\s+/)
+    .filter((word) => !["and", "of", "the"].includes(word.toLowerCase()))
+    .slice(0, 3)
+    .map((word) => word[0])
+    .join("");
+}
+
+export function SchoolsDirectory({
+  schools,
+}: {
+  schools: DirectorySchool[];
+}) {
+  const [query, setQuery] = useState("");
+  const [state, setState] = useState("all");
+  const [program, setProgram] = useState("all");
+
+  const states = [
+    ...new Set(
+      schools
+        .map((school) => school.state)
+        .filter((item): item is string => Boolean(item)),
+    ),
   ].sort();
   const normalizedQuery = query.trim().toLowerCase();
 
@@ -23,16 +56,19 @@ export function SchoolsDirectory() {
         school.abbreviation,
         school.bandName,
         school.location,
-      ].some((value) => value.toLowerCase().includes(normalizedQuery));
-    const matchesConference =
-      conference === "all" || school.conference === conference;
+      ].some((value) => value?.toLowerCase().includes(normalizedQuery));
+    const matchesState = state === "all" || school.state === state;
+    const matchesProgram =
+      program === "all" ||
+      (program === "band" && school.hasMarchingBand) ||
+      (program === "school" && !school.hasMarchingBand);
 
-    return matchesQuery && matchesConference;
+    return matchesQuery && matchesState && matchesProgram;
   });
 
   return (
     <div>
-      <div className="grid gap-4 border-y border-ink py-5 md:grid-cols-[1fr_auto] md:items-end">
+      <div className="grid gap-4 border-y border-ink py-5 md:grid-cols-[1fr_auto_auto] md:items-end">
         <label className="grid max-w-xl gap-1 text-[0.7rem] font-bold uppercase tracking-[0.1em] text-muted">
           Find a school or band
           <span className="relative block">
@@ -51,18 +87,30 @@ export function SchoolsDirectory() {
           </span>
         </label>
         <label className="grid gap-1 text-[0.7rem] font-bold uppercase tracking-[0.1em] text-muted">
-          Conference
+          State
           <select
-            value={conference}
-            onChange={(event) => setConference(event.target.value)}
-            className="min-h-12 min-w-48 border border-ink/30 bg-canvas px-3 text-sm font-semibold normal-case tracking-normal text-ink focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+            value={state}
+            onChange={(event) => setState(event.target.value)}
+            className="min-h-12 min-w-32 border border-ink/30 bg-canvas px-3 text-sm font-semibold normal-case tracking-normal text-ink focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
           >
-            <option value="all">All conferences</option>
-            {conferences.map((item) => (
+            <option value="all">All states</option>
+            {states.map((item) => (
               <option key={item} value={item}>
                 {item}
               </option>
             ))}
+          </select>
+        </label>
+        <label className="grid gap-1 text-[0.7rem] font-bold uppercase tracking-[0.1em] text-muted">
+          Program
+          <select
+            value={program}
+            onChange={(event) => setProgram(event.target.value)}
+            className="min-h-12 min-w-44 border border-ink/30 bg-canvas px-3 text-sm font-semibold normal-case tracking-normal text-ink focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+          >
+            <option value="all">All HBCUs</option>
+            <option value="band">Marching bands</option>
+            <option value="school">Schools without a listed band</option>
           </select>
         </label>
       </div>
@@ -77,20 +125,21 @@ export function SchoolsDirectory() {
               >
                 <span
                   className="grid size-14 place-items-center border border-ink/20 font-display text-xl font-extrabold text-white"
-                  style={{ backgroundColor: school.primaryColor }}
+                  style={{ backgroundColor: school.primaryColor ?? "var(--ink)" }}
                   aria-hidden="true"
                 >
-                  {school.abbreviation.slice(0, 2)}
+                  {initials(school)}
                 </span>
                 <span>
                   <span className="block text-[0.65rem] font-extrabold uppercase tracking-[0.12em] text-accent">
-                    {String(index + 1).padStart(2, "0")} · {school.conference}
+                    {String(index + 1).padStart(2, "0")} ·{" "}
+                    {school.state ?? school.institutionType ?? "HBCU"}
                   </span>
                   <span className="mt-1 block font-display text-3xl font-extrabold uppercase leading-none tracking-[-0.025em]">
                     {school.name}
                   </span>
                   <span className="mt-1 block text-sm font-semibold text-muted">
-                    {school.bandName}
+                    {school.bandName ?? "No active marching band listed"}
                   </span>
                 </span>
                 <span className="hidden lg:block">
@@ -99,7 +148,9 @@ export function SchoolsDirectory() {
                     {school.location}
                   </span>
                   <span className="mt-2 block max-w-md text-sm leading-6 text-muted">
-                    {school.description}
+                    {school.description ??
+                      school.institutionType ??
+                      "Federally recognized historically Black college or university."}
                   </span>
                 </span>
                 <span className="flex items-center justify-between gap-5 sm:block sm:text-right">
@@ -124,16 +175,17 @@ export function SchoolsDirectory() {
       ) : (
         <div className="border-b border-ink py-20 text-center">
           <p className="font-display text-4xl font-extrabold uppercase">
-            No band found
+            No school found
           </p>
           <p className="mt-2 text-sm text-muted">
-            Try a school name, band name, city, or another conference.
+            Try a school name, band name, city, or another filter.
           </p>
           <button
             type="button"
             onClick={() => {
               setQuery("");
-              setConference("all");
+              setState("all");
+              setProgram("all");
             }}
             className="mt-6 min-h-11 bg-ink px-5 text-sm font-bold text-canvas hover:bg-accent"
           >

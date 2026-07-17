@@ -10,7 +10,8 @@
     "typecheck": "tsc --noEmit",
     "db:generate": "drizzle-kit generate",
     "db:migrate": "drizzle-kit migrate",
-    "db:studio": "drizzle-kit studio"
+    "db:studio": "drizzle-kit studio",
+    "db:seed-hbcus": "node --env-file=.env scripts/seed-hbcus.mjs"
   },
   "dependencies": {
     "@mux/mux-node": "^14.1.1",

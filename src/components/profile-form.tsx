@@ -6,7 +6,6 @@ import {
   updateProfile,
   type ProfileActionState,
 } from "@/app/account/actions";
-import { schools } from "@/lib/data";
 
 const initialState: ProfileActionState = {};
 
@@ -27,9 +26,11 @@ function SaveButton() {
 export function ProfileForm({
   username,
   schoolId,
+  schools,
 }: {
   username: string;
   schoolId: string | null;
+  schools: Array<{ id: string; name: string; bandName: string | null }>;
 }) {
   const [state, action] = useActionState(updateProfile, initialState);
 
@@ -57,8 +58,9 @@ export function ProfileForm({
         >
           <option value="">No school selected</option>
           {schools.map((school) => (
-            <option key={school.id} value={school.databaseId}>
-              {school.name} · {school.bandName}
+            <option key={school.id} value={school.id}>
+              {school.name}
+              {school.bandName ? ` · ${school.bandName}` : ""}
             </option>
           ))}
         </select>

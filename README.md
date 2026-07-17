@@ -36,6 +36,7 @@ npm run build
 npm run db:generate
 npm run db:migrate
 npm run db:studio
+npm run db:seed-hbcus
 ```
 
 ## Provider setup
@@ -56,6 +57,14 @@ For authentication:
   direct database hostname is IPv6-only and may not work on every network.
 
 Never expose the Mux token secret or database connection string to the browser.
+
+## HBCU directory data
+
+`npm run db:seed-hbcus` idempotently imports the accredited HBCU directory
+published by the U.S. Department of Education. Verified marching-band names are
+maintained separately in the seed script with a source URL for each program.
+Schools without a verified active band remain available for member affiliation
+but are excluded from performance uploads.
 
 ## Product context
 

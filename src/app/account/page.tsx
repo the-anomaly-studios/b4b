@@ -11,7 +11,6 @@ import {
 } from "lucide-react";
 import { signOut } from "@/app/auth/actions";
 import { ProfileForm } from "@/components/profile-form";
-import { schools } from "@/lib/data";
 import { isSupabaseConfigured } from "@/lib/supabase/env";
 import { createClient } from "@/lib/supabase/server";
 
@@ -33,7 +32,11 @@ export default async function AccountPage() {
     redirect("/sign-in?next=/account");
   }
 
-  const [{ data: profile }, { data: recentUploads }] = await Promise.all([
+  const [
+    { data: profile },
+    { data: recentUploads },
+    { data: schoolOptions },
+  ] = await Promise.all([
     supabase
       .from("profiles")
       .select("username, avatar_url, school_id")
@@ -47,6 +50,10 @@ export default async function AccountPage() {
       .eq("uploader_id", user.id)
       .order("created_at", { ascending: false })
       .limit(10),
+    supabase
+      .from("schools")
+      .select("id, name, band_name")
+      .order("name", { ascending: true }),
   ]);
 
   const fallbackUsername =
@@ -54,8 +61,8 @@ export default async function AccountPage() {
       ? user.user_metadata.username
       : user.email?.split("@")[0] ?? "bandfan";
   const username = profile?.username ?? fallbackUsername;
-  const affiliatedSchool = schools.find(
-    (school) => school.databaseId === profile?.school_id,
+  const affiliatedSchool = schoolOptions?.find(
+    (school) => school.id === profile?.school_id,
   );
 
   return (
@@ -96,6 +103,11 @@ export default async function AccountPage() {
             <ProfileForm
               username={username}
               schoolId={profile?.school_id ?? null}
+              schools={(schoolOptions ?? []).map((school) => ({
+                id: school.id,
+                name: school.name,
+                bandName: school.band_name,
+              }))}
             />
           </div>
         </div>

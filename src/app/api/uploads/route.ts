@@ -45,12 +45,15 @@ export async function POST(request: Request) {
 
   const { data: school } = await supabase
     .from("schools")
-    .select("id")
+    .select("id, has_marching_band")
     .eq("id", parsed.data.schoolId)
     .maybeSingle();
 
-  if (!school) {
-    return Response.json({ error: "Select a valid school." }, { status: 400 });
+  if (!school?.has_marching_band) {
+    return Response.json(
+      { error: "Select a school with a verified marching-band program." },
+      { status: 400 },
+    );
   }
 
   const id = randomUUID();

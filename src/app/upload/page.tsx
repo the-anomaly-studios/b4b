@@ -19,11 +19,18 @@ export default async function UploadPage() {
     redirect("/sign-in?next=/upload");
   }
 
-  const { data: profile } = await supabase
-    .from("profiles")
-    .select("school_id")
-    .eq("id", user.id)
-    .maybeSingle();
+  const [{ data: profile }, { data: schools }] = await Promise.all([
+    supabase
+      .from("profiles")
+      .select("school_id")
+      .eq("id", user.id)
+      .maybeSingle(),
+    supabase
+      .from("schools")
+      .select("id, name, band_name")
+      .eq("has_marching_band", true)
+      .order("name", { ascending: true }),
+  ]);
 
   return (
     <main id="main-content">
@@ -45,7 +52,14 @@ export default async function UploadPage() {
 
       <section className="mx-auto grid max-w-[1200px] gap-10 px-4 py-12 sm:px-6 lg:grid-cols-[1fr_19rem] lg:px-10 lg:py-16">
         <div className="max-w-3xl">
-          <VideoUploadForm defaultSchoolId={profile?.school_id} />
+          <VideoUploadForm
+            defaultSchoolId={profile?.school_id}
+            schools={(schools ?? []).map((school) => ({
+              id: school.id,
+              name: school.name,
+              bandName: school.band_name,
+            }))}
+          />
         </div>
         <aside className="border-t border-ink pt-6 lg:border-l lg:border-t-0 lg:pl-8">
           <ShieldCheck aria-hidden="true" className="text-positive" size={24} />

@@ -4,7 +4,6 @@ import MuxUploader from "@mux/mux-uploader-react";
 import { useState } from "react";
 import Link from "next/link";
 import { ArrowLeft, CheckCircle2, UploadCloud } from "lucide-react";
-import { schools } from "@/lib/data";
 
 type UploadDetails = {
   title: string;
@@ -15,8 +14,10 @@ type UploadDetails = {
 
 export function VideoUploadForm({
   defaultSchoolId,
+  schools,
 }: {
   defaultSchoolId?: string | null;
+  schools: Array<{ id: string; name: string; bandName: string | null }>;
 }) {
   const [details, setDetails] = useState<UploadDetails | null>(null);
   const [videoId, setVideoId] = useState<string | null>(null);
@@ -114,8 +115,8 @@ export function VideoUploadForm({
           </h2>
           <p className="mt-2 text-sm leading-6 text-muted">
             {details.title} ·{" "}
-            {schools.find((school) => school.databaseId === details.schoolId)
-              ?.abbreviation ?? "Selected school"}
+            {schools.find((school) => school.id === details.schoolId)?.name ??
+              "Selected school"}
           </p>
           <div className="mt-7 border border-ink/25 bg-paper p-4 sm:p-6">
             <MuxUploader
@@ -178,8 +179,9 @@ export function VideoUploadForm({
             Select a school
           </option>
           {schools.map((school) => (
-            <option key={school.id} value={school.databaseId}>
-              {school.name} · {school.bandName}
+            <option key={school.id} value={school.id}>
+              {school.name}
+              {school.bandName ? ` · ${school.bandName}` : ""}
             </option>
           ))}
         </select>
