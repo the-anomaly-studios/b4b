@@ -1,36 +1,64 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Band for Band
 
-## Getting Started
+Band for Band is a discovery and ranking platform for HBCU marching-band
+performances. This repository currently contains the production-ready discovery
+foundation: the performance feed, leaderboard, school directory, and school
+profiles backed by realistic sample data.
 
-First, run the development server:
+## Stack
+
+- Next.js App Router, React, and TypeScript
+- Tailwind CSS
+- Supabase Postgres and Auth
+- Drizzle ORM
+- Mux video upload and playback
+- Radix UI primitives
+
+## Local development
 
 ```bash
+npm install
+cp .env.example .env.local
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The discovery experience runs without provider credentials. Supabase, database,
+and Mux operations require the corresponding values in `.env.local`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Open [http://localhost:3000](http://localhost:3000).
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Commands
 
-## Learn More
+```bash
+npm run lint
+npm run typecheck
+npm run build
+npm run db:generate
+npm run db:migrate
+npm run db:studio
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Provider setup
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Create a Supabase project and copy its project URL, publishable key, and
+   Postgres pooler connection string.
+2. Create a Mux environment and copy its token ID, token secret, and webhook
+   signing secret.
+3. Add those values to `.env.local`.
+4. Apply `supabase/migrations/20260717150000_auth_profiles.sql`.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+For authentication:
 
-## Deploy on Vercel
+- Enable Email and Google under Supabase Authentication providers.
+- Add `http://localhost:3000/auth/callback` as a local redirect URL.
+- Add the production `/auth/callback` URL before deploying.
+- Use the Supabase session pooler connection string for `DATABASE_URL`. The
+  direct database hostname is IPv6-only and may not work on every network.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Never expose the Mux token secret or database connection string to the browser.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Product context
+
+`PRODUCT.md` captures product strategy and `DESIGN.md` captures the visual
+system. The architecture and user-story documents supplied for the project
+remain the source of truth for the full MVP.
