@@ -1,0 +1,181 @@
+[
+  {
+    "slug": "american-baptist-college",
+    "abbreviation": "ABCN",
+    "conference": "None",
+    "primaryColor": "#003B70",
+    "secondaryColor": "#FFFFFF",
+    "sources": [
+      "https://abcnash.edu/branding-guidelines/",
+      "https://abcnash.edu/wp-content/uploads/2025/09/2025-2026-COLLEGE-CATALOG-Revised-September-2025.pdf"
+    ]
+  },
+  {
+    "slug": "fisk-university",
+    "abbreviation": "FU",
+    "conference": "HBCUAC",
+    "primaryColor": "#102E67",
+    "secondaryColor": "#F4BA13",
+    "sources": [
+      "https://www.fisk.edu/about/administration/office-of-the-president/marketing-and-public-relations/university-brand/",
+      "https://media.hbcuac.org/schools/fisk/",
+      "https://www.fisk.edu/main-featured/fisk-university-announces-the-discontinuation-of-its-gymnastics-program-in-may-2026/"
+    ]
+  },
+  {
+    "slug": "lane-college",
+    "abbreviation": "LANE",
+    "conference": "SIAC",
+    "primaryColor": "#003057",
+    "secondaryColor": "#BA0C2F",
+    "sources": [
+      "https://lanecollege.edu/lane-life-2/communications-and-marketing",
+      "https://golcdragons.com/news/2026/3/6/womens-basketball-lane-holds-off-albany-state-to-advance-to-siac-championship.aspx",
+      "https://www.lanecollege.edu/alumni/athletics"
+    ]
+  },
+  {
+    "slug": "le-moyne-owen-college",
+    "abbreviation": "LOC",
+    "conference": "SIAC",
+    "primaryColor": "#53369A",
+    "secondaryColor": "#8F7A02",
+    "sources": [
+      "https://athletics.loc.edu/sports/2011/2/22/BB_0222111817.aspx",
+      "https://athletics.loc.edu/news/2026/3/4/mens-basketball-magicians-earn-conference-honors-as-pittman-and-bratcher-receive-siac-recognition.aspx",
+      "https://loc.edu/wp-content/uploads/2024/08/2024-2025-Student-Handbook.pdf"
+    ]
+  },
+  {
+    "slug": "meharry-medical-college",
+    "abbreviation": "MMC",
+    "conference": "None",
+    "primaryColor": "#13294B",
+    "secondaryColor": "#F2A900",
+    "sources": [
+      "https://meharry.edu/meet-meharry/administrative-offices/communications-and-marketing/identity-and-branding-hub/",
+      "https://meharry.edu/life-at-meharry/student-life/",
+      "https://meharry.edu/wp-content/uploads/2025/09/Checklist-for-MMC-Student-Events-1.pdf"
+    ]
+  },
+  {
+    "slug": "tennessee-state",
+    "abbreviation": "TSU",
+    "conference": "OVC",
+    "primaryColor": "#00539F",
+    "secondaryColor": "#FFFFFF",
+    "sources": [
+      "https://www.tnstate.edu/publications/documents/styleguide.pdf",
+      "https://www.tnstate.edu/about_tsu/fast_facts.aspx",
+      "https://tsutigers.com/news/2026/6/18/football-ovc-announces-return-to-traditional-football-branding-for-2026-season.aspx"
+    ]
+  },
+  {
+    "slug": "huston-tillotson-university",
+    "abbreviation": "HTU",
+    "conference": "HBCUAC",
+    "primaryColor": "#651C32",
+    "secondaryColor": "#FFD100",
+    "sources": [
+      "https://htu.edu/marketing-communications/",
+      "https://htu.edu/wp-content/uploads/2025/07/I-Governance.pdf",
+      "https://hbcuac.org/sports/bsb/2025-26/releases/20260504qdwz5w"
+    ]
+  },
+  {
+    "slug": "jarvis-christian-college",
+    "abbreviation": "JCU",
+    "conference": "HBCUAC",
+    "primaryColor": "#0033A0",
+    "secondaryColor": "#FFCD00",
+    "sources": [
+      "https://www.jarvis.edu/advancement/public-relations/brand-standards/",
+      "https://hbcuac.org/general/2025-26/releases/20260421t1gsp4",
+      "https://www.jarvis.edu/enrollment/registrar/"
+    ]
+  },
+  {
+    "slug": "paul-quinn-college",
+    "abbreviation": "PQC",
+    "conference": "HBCUAC",
+    "primaryColor": "#000000",
+    "secondaryColor": "#FFFFFF",
+    "sources": [
+      "https://paulquinn.edu/brand/",
+      "https://media.hbcuac.org/schools/paul-quinn/",
+      "https://paulquinn.edu/wp-content/uploads/2025/12/PQC-Student-Handbook-2023-2025-Updated-Sept2025.pdf"
+    ]
+  },
+  {
+    "slug": "prairie-view-a-m-university",
+    "abbreviation": "PVAMU",
+    "conference": "SWAC",
+    "primaryColor": "#582C83",
+    "secondaryColor": "#EAAA00",
+    "sources": [
+      "https://www.pvamu.edu/marcomm/resources/colors/",
+      "https://www.pvamu.edu/marcomm/resources/editorial-style/",
+      "https://pvpanthers.com/news/2026/7/14/football-panthers-set-for-swac-media-day-wednesday.aspx"
+    ]
+  },
+  {
+    "slug": "southwestern-christian-college",
+    "abbreviation": "SWCC",
+    "conference": "NTJCAC",
+    "primaryColor": "#1C284E",
+    "secondaryColor": "#FFFFFF",
+    "sources": [
+      "https://www.swcc.edu/",
+      "https://njcaaregion5.com/landing/index",
+      "https://static.wixstatic.com/media/82aa45_e09600fef05b4619ae172891bf13691b~mv2.jpg/v1/fill/w_390,h_155,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/SwCC%20New%20logo-01.jpg"
+    ]
+  },
+  {
+    "slug": "st-philip-s-college",
+    "abbreviation": "SPC",
+    "conference": "TCAC",
+    "primaryColor": "#002596",
+    "secondaryColor": "#FFFFFF",
+    "sources": [
+      "https://www.alamo.edu/spc/experience-spc/campus-life/student-life/college-spirit/",
+      "https://www.alamo.edu/spc/news-events/media/brand-standards/",
+      "https://www.alamo.edu/spc/news-events/news/2025/september/spc-hosts-basketball-team-from-monterrey-mexico/"
+    ]
+  },
+  {
+    "slug": "texas-college",
+    "abbreviation": "TC",
+    "conference": "RRAC",
+    "primaryColor": "#470A68",
+    "secondaryColor": "#E0A526",
+    "sources": [
+      "https://texascollege.edu/about-brtexas-college/quick-facts/",
+      "https://www.texascollege.edu/uploads/cms/nav-467-6762a215cc8c4.pdf",
+      "https://www.texascollege.edu/office-of-brdevelopment/public-relations/"
+    ]
+  },
+  {
+    "slug": "texas-southern-university",
+    "abbreviation": "TSU",
+    "conference": "SWAC",
+    "primaryColor": "#75263B",
+    "secondaryColor": "#606060",
+    "sources": [
+      "https://tsu.edu/about/administration/marketing-and-communications/documents/tsu-brand-standard-guidelines_0322.pdf",
+      "https://tsusports.com/sports/2011/12/19/GEN_1219113654.aspx?id=11",
+      "https://tsusports.com/news/2026/5/17/baseball-enters-swac-tournament-seeded-6th-will-play-florida-am-once-again.aspx"
+    ]
+  },
+  {
+    "slug": "wiley-college",
+    "abbreviation": "WU",
+    "conference": "HBCUAC",
+    "primaryColor": "#3D2C68",
+    "secondaryColor": "#000000",
+    "sources": [
+      "https://www.wileyc.edu/assets/downloads/wiley-university-brand-guidelines-2024.pdf.pdf",
+      "https://www.wileyc.edu/about/marketing-communications",
+      "https://media.hbcuac.org/schools/wiley/"
+    ]
+  }
+]

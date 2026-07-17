@@ -1,0 +1,263 @@
+[
+  {
+    "slug": "bennett-college",
+    "abbreviation": "BNC",
+    "conference": "None",
+    "primaryColor": "#00236C",
+    "secondaryColor": "#FFFFFF",
+    "sources": [
+      "https://www.bennett.edu/wp-content/uploads/2025/07/Student-Handbook-2025-26.pdf",
+      "https://www.bennett.edu/wp-content/uploads/2024/09/Bennett-Fact-Book-2023-24.pdf"
+    ]
+  },
+  {
+    "slug": "elizabeth-city-state-university",
+    "abbreviation": "ECSU",
+    "conference": "CIAA",
+    "primaryColor": "#0039A6",
+    "secondaryColor": "#FFFFFF",
+    "sources": [
+      "https://ecsu.edu/cam/brand.php",
+      "https://catalog.ecsu.edu/content.php?catoid=9&navoid=385"
+    ]
+  },
+  {
+    "slug": "fayetteville-state-university",
+    "abbreviation": "FSU",
+    "conference": "CIAA",
+    "primaryColor": "#0067B1",
+    "secondaryColor": "#FFFFFF",
+    "sources": [
+      "https://www.uncfsu.edu/about-fsu/fsu-leadership/office-of-the-chancellor/office-of-strategic-communication/fsu-style-guide",
+      "https://fsubroncos.com/sports/2018/5/25/ot-quick-facts-html.aspx"
+    ]
+  },
+  {
+    "slug": "johnson-c-smith-university",
+    "abbreviation": "JCSU",
+    "conference": "CIAA",
+    "primaryColor": "#002D56",
+    "secondaryColor": "#FFCF01",
+    "sources": [
+      "https://www.jcsu.edu/communications-and-marketing/brand-management",
+      "https://www.jcsu.edu/news/ciaa-announces-2026-food-lion-mens-and-womens-basketball-tournament-brackets"
+    ]
+  },
+  {
+    "slug": "livingstone-college",
+    "abbreviation": "LC",
+    "conference": "CIAA",
+    "primaryColor": "#8CB0BF",
+    "secondaryColor": "#000000",
+    "sources": [
+      "https://livingstone.edu/brand-guide/",
+      "https://livingstone.edu/wp-content/uploads/2023/10/Student-Handbook-2023-2025-Complete.pdf"
+    ]
+  },
+  {
+    "slug": "north-carolina-a-and-t",
+    "abbreviation": "NCAT",
+    "conference": "CAA",
+    "primaryColor": "#004684",
+    "secondaryColor": "#FDB927",
+    "sources": [
+      "https://relations.ncat.edu/branding/color-palette.html",
+      "https://caasports.com/news/2023/7/20/football-caa-changes-official-conference-name-to-coastal-athletic-association.aspx"
+    ]
+  },
+  {
+    "slug": "north-carolina-central-university",
+    "abbreviation": "NCCU",
+    "conference": "MEAC",
+    "primaryColor": "#862633",
+    "secondaryColor": "#A2AAAD",
+    "sources": [
+      "https://myeol.nccu.edu/sites/default/files/2023-10/Branding_and_Identity_Guidelines.pdf",
+      "https://meacsports.com/news/2026/7/13/2026-meac-football-media-day-participants-announced.aspx"
+    ]
+  },
+  {
+    "slug": "saint-augustine-s-university",
+    "abbreviation": "SAU",
+    "conference": "Independent",
+    "primaryColor": "#003767",
+    "secondaryColor": "#FFFFFF",
+    "sources": [
+      "https://www.st-aug.edu/wp-content/uploads/2019/08/SAU-Style-Guide-8-24-18.pdf",
+      "https://theciaa.com/news/2025/6/20/about-the-ciaa-ciaa-board-of-directors-concludes-2025-spring-meeting-with-key-strategic-approvals.aspx",
+      "https://www.st-aug.edu/sau-celebrates-graduates-whose-resilience-exemplifies-the-falcon-spirit/"
+    ]
+  },
+  {
+    "slug": "shaw-university",
+    "abbreviation": "SHAW",
+    "conference": "CIAA",
+    "primaryColor": "#862633",
+    "secondaryColor": "#FFFFFF",
+    "sources": [
+      "https://www.shawu.edu/wp-content/uploads/2025/08/BrandingManual_Rev-05.30.2023-v3.pdf",
+      "https://www.shawu.edu/wp-content/uploads/2024/12/CIAA-2024-Sponsorship-Package-2.pdf"
+    ]
+  },
+  {
+    "slug": "winston-salem-state-university",
+    "abbreviation": "WSSU",
+    "conference": "CIAA",
+    "primaryColor": "#C8102E",
+    "secondaryColor": "#FFFFFF",
+    "sources": [
+      "https://wssu.edu/about/chancellors-office/division-of-strategic-communications/oimc/university-branding/index.html",
+      "https://theciaa.com/news/2026/6/8/about-the-ciaa-ciaa-announces-2026-27-management-council-leadership-slate.aspx"
+    ]
+  },
+  {
+    "slug": "central-state-university",
+    "abbreviation": "CSU-OH",
+    "conference": "SIAC",
+    "primaryColor": "#851740",
+    "secondaryColor": "#F6CF32",
+    "sources": [
+      "https://www.centralstate.edu/about",
+      "https://www.centralstate.edu/sites/default/files/2024-12/CSU_Student_Handbook_2024-2025.pdf",
+      "https://www.centralstate.edu/about-csu/our-history-and-traditions"
+    ]
+  },
+  {
+    "slug": "wilberforce-university",
+    "abbreviation": "WU-OH",
+    "conference": "HBCUAC",
+    "primaryColor": "#2E693D",
+    "secondaryColor": "#EBCD47",
+    "sources": [
+      "https://wilberforce.edu/wp-content/uploads/2025/07/Updated-Student-Handbook_2025.pdf",
+      "https://wilberforce.edu/athletics/",
+      "https://wilberforce.edu/wilberforce-university-slated-to-join-gulf-coast-athletic-conference-in-2024/"
+    ]
+  },
+  {
+    "slug": "langston-university",
+    "abbreviation": "LU",
+    "conference": "SAC",
+    "primaryColor": "#FF671D",
+    "secondaryColor": "#002E6D",
+    "sources": [
+      "https://langston.edu/brand-guidelines/",
+      "https://soonerathletic.org/schedule.aspx?schedule=2198"
+    ]
+  },
+  {
+    "slug": "cheyney-university-of-pennsylvania",
+    "abbreviation": "CU",
+    "conference": "Independent",
+    "primaryColor": "#0C123B",
+    "secondaryColor": "#205A91",
+    "sources": [
+      "https://cheyney.edu/marketing-communications/brand-colors/",
+      "https://cheyney.edu/campus-experience/athletics/",
+      "https://cheyney.edu/news/cheyney-university-announces-plans-for-upcoming-sports-season/"
+    ]
+  },
+  {
+    "slug": "lincoln-university",
+    "abbreviation": "LU-PA",
+    "conference": "CIAA",
+    "primaryColor": "#122A6D",
+    "secondaryColor": "#F96B07",
+    "sources": [
+      "https://www.lincoln.edu/about/information-technology/website-management.html",
+      "https://www.lincoln.edu/ciaa.html"
+    ]
+  },
+  {
+    "slug": "allen-university",
+    "abbreviation": "AU",
+    "conference": "SIAC",
+    "primaryColor": "#0034A3",
+    "secondaryColor": "#E6B91E",
+    "sources": [
+      "https://allenuniversity.edu/s/Student-Handbook-2025-2026.pdf",
+      "https://allenuniversity.edu/au-athletics",
+      "https://allenuniversity.edu/news-events/allen-university-re-joins-southern-intercollegiate-athletic-conference-siac"
+    ]
+  },
+  {
+    "slug": "benedict-college",
+    "abbreviation": "BC",
+    "conference": "SIAC",
+    "primaryColor": "#4C145E",
+    "secondaryColor": "#FFC301",
+    "sources": [
+      "https://benedict.edu/office-of-communications-and-marketing/branding/",
+      "https://benedict.edu/trademark-licensing/"
+    ]
+  },
+  {
+    "slug": "claflin-university",
+    "abbreviation": "CLA",
+    "conference": "CIAA",
+    "primaryColor": "#860038",
+    "secondaryColor": "#C4661F",
+    "sources": [
+      "https://www.claflin.edu/about/offices-services/communications-marketing-department/brand-identity",
+      "https://www.claflin.edu/news-events/news/2018/03/14/claflin-to-join-central-intercollegiate-athletic-association"
+    ]
+  },
+  {
+    "slug": "clinton-college",
+    "abbreviation": "CC",
+    "conference": "Independent",
+    "primaryColor": "#9B2743",
+    "secondaryColor": "#EED484",
+    "sources": [
+      "https://www.clintoncollege.edu/athletics/",
+      "https://www.clintoncollege.edu/wp-content/uploads/2024/09/CC-Student-Handbook-2023-2025-HH-7-15-24-1.pdf"
+    ]
+  },
+  {
+    "slug": "denmark-technical-college",
+    "abbreviation": "DTC",
+    "conference": "Independent",
+    "primaryColor": "#003366",
+    "secondaryColor": "#FFCC00",
+    "sources": [
+      "https://www.denmarktech.edu/about-dtc/dtcbrand/",
+      "https://www.denmarktech.edu/athletics/",
+      "https://theuscaa.com/sports/wbkb/2025-26/teams/denmarktechnicalcollege"
+    ]
+  },
+  {
+    "slug": "morris-college",
+    "abbreviation": "MORC",
+    "conference": "Independent",
+    "primaryColor": "#012C9B",
+    "secondaryColor": "#F5BE40",
+    "sources": [
+      "https://www.morris.edu/Content/Uploads/Morris%20College/images/2024-2025%20STUDENT%20HANDBOOK.pdf",
+      "https://www.morris.edu/student-life/student-life-info",
+      "https://www.morris.edu/athletics"
+    ]
+  },
+  {
+    "slug": "south-carolina-state-university",
+    "abbreviation": "SCSU",
+    "conference": "MEAC",
+    "primaryColor": "#872837",
+    "secondaryColor": "#002F70",
+    "sources": [
+      "https://scsu.edu/strategic_communications-marketing/SCSU%20Branding-revised.pdf",
+      "https://scsu.edu/athletics/index.php",
+      "https://meacsports.com/news/2026/7/13/2026-meac-football-media-day-participants-announced.aspx"
+    ]
+  },
+  {
+    "slug": "voorhees-college",
+    "abbreviation": "VU",
+    "conference": "HBCUAC",
+    "primaryColor": "#0078BD",
+    "secondaryColor": "#FFFFFF",
+    "sources": [
+      "https://voorhees.edu/wp-content/uploads/2023/04/V1-Governance-03.31.22b.pdf",
+      "https://voorhees.edu/voorhees-university-mens-outdoor-track-field-team-won-the-inaugural-hbcuac-outdoor-championship-and-coach-jeffrey-hughes-received-the-mens-coach-of-the-year-honor/"
+    ]
+  }
+]

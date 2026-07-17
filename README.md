@@ -37,6 +37,7 @@ npm run db:generate
 npm run db:migrate
 npm run db:studio
 npm run db:seed-hbcus
+npm run db:seed-school-identities
 ```
 
 ## Provider setup
@@ -65,6 +66,9 @@ published by the U.S. Department of Education. Verified marching-band names are
 maintained separately in the seed script with a source URL for each program.
 Schools without a verified active band remain available for member affiliation
 but are excluded from performance uploads.
+
+`npm run db:seed-school-identities` fills abbreviation, conference, and school
+colors for every HBCU from sourced identity files in `scripts/data/`.
 
 ## Product context
 

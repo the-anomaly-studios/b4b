@@ -1,0 +1,106 @@
+[
+  {
+    "slug": "hampton-university",
+    "abbreviation": "HU",
+    "conference": "CAA",
+    "primaryColor": "#004ADD",
+    "secondaryColor": "#F3F8FC",
+    "sources": [
+      "https://home.hamptonu.edu/our/brand-guide/",
+      "https://hamptonpirates.com/sports/2026/6/16/coastal-athletic-association-caa.aspx"
+    ]
+  },
+  {
+    "slug": "norfolk-state-university",
+    "abbreviation": "NSU",
+    "conference": "MEAC",
+    "primaryColor": "#007A53",
+    "secondaryColor": "#F3D03E",
+    "sources": [
+      "https://www.nsu.edu/About/Administrative-Offices-Services/Communications-and-Marketing/Brand-and-Visual-Identity/Brand-Logo",
+      "https://nsuspartans.com/sports/2025/4/11/norfolk-state-quick-facts.aspx"
+    ]
+  },
+  {
+    "slug": "virginia-state-university",
+    "abbreviation": "VSU",
+    "conference": "CIAA",
+    "primaryColor": "#00358E",
+    "secondaryColor": "#EA6D26",
+    "sources": [
+      "https://www.vsu.edu/about/administrative-offices/office-of-communications/university-colors.php",
+      "https://www.vsu.edu/files/docs/vsu-style-guide.pdf",
+      "https://theciaa.com/sports/2021/3/23/Membership.aspx"
+    ]
+  },
+  {
+    "slug": "virginia-union-university",
+    "abbreviation": "VUU",
+    "conference": "CIAA",
+    "primaryColor": "#9B2743",
+    "secondaryColor": "#8A8D8F",
+    "sources": [
+      "https://vuu.edu/Content/Uploads/vuu.edu/files/Style%20Manual-%20VUU.pdf",
+      "https://theciaa.com/sports/2021/3/23/Membership.aspx"
+    ]
+  },
+  {
+    "slug": "virginia-university-of-lynchburg",
+    "abbreviation": "VUL",
+    "conference": "Independent",
+    "primaryColor": "#002D89",
+    "secondaryColor": "#56BAEB",
+    "sources": [
+      "https://wp.vul.edu/",
+      "https://wp.vul.edu/wp-content/uploads/2023/10/logo1_64px.png",
+      "https://athletics.vul.edu/",
+      "https://athletics.vul.edu/sports/fball/2026-27/schedule"
+    ]
+  },
+  {
+    "slug": "university-of-the-virgin-islands",
+    "abbreviation": "UVI",
+    "conference": "HBCUAC",
+    "primaryColor": "#001489",
+    "secondaryColor": "#FFFFFF",
+    "sources": [
+      "https://uvi.edu/files/documents/Institutional_Advancement/Public_Relations/UVI_Brand_Style_Guide_6.pdf",
+      "https://uviathletics.com/sports/mbkb/2025-26/releases/202602231e5ofz"
+    ]
+  },
+  {
+    "slug": "university-of-the-virgin-islands-albert-a-sheen",
+    "abbreviation": "UVI-STX",
+    "conference": "None",
+    "primaryColor": "#001489",
+    "secondaryColor": "#FFFFFF",
+    "sources": [
+      "https://uvi.edu/files/documents/Institutional_Advancement/Public_Relations/UVI_Brand_Style_Guide_6.pdf",
+      "https://www.uvi.edu/about/campuses/st-croix-campus.html",
+      "https://www.uvi.edu/files/documents/Provost/Catalog/catalog-2022-2024.pdf"
+    ]
+  },
+  {
+    "slug": "bluefield-state-college",
+    "abbreviation": "BSC",
+    "conference": "CIAA",
+    "primaryColor": "#1B3155",
+    "secondaryColor": "#D6B377",
+    "sources": [
+      "https://bluefieldstate.edu/about/marketing-media/",
+      "https://bluefieldstate.edu/wp-content/uploads/2023/08/cropped-BStateLogo-192x192.png",
+      "https://theciaa.com/sports/2021/3/23/Membership.aspx"
+    ]
+  },
+  {
+    "slug": "west-virginia-state-university",
+    "abbreviation": "WVSU",
+    "conference": "MEC",
+    "primaryColor": "#CFAB2B",
+    "secondaryColor": "#000000",
+    "sources": [
+      "https://wvstateu.edu/research-extension/wp-content/uploads/sites/6/2024/09/2019-brand-graphic-identity.pdf",
+      "https://wvstateu.edu/about/wvsu-quick-facts/"
+    ]
+  }
+]

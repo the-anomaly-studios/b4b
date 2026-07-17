@@ -20,7 +20,7 @@ export const schools = pgTable(
     bandName: varchar("band_name", { length: 180 }),
     description: text("description"),
     location: varchar("location", { length: 180 }),
-    conference: varchar("conference", { length: 32 }),
+    conference: varchar("conference", { length: 80 }),
     logoUrl: text("logo_url"),
     primaryColor: varchar("primary_color", { length: 32 }),
     secondaryColor: varchar("secondary_color", { length: 32 }),

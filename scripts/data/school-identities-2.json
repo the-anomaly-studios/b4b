@@ -1,0 +1,351 @@
+[
+  {
+    "slug": "albany-state-university",
+    "abbreviation": "ASU",
+    "conference": "SIAC",
+    "primaryColor": "#0033A0",
+    "secondaryColor": "#EAAA00",
+    "sources": [
+      "https://asurams.edu/presidents-office/office-of-marketing-and-communications/university-colors.php",
+      "https://asugoldenrams.com/"
+    ]
+  },
+  {
+    "slug": "clark-atlanta-university",
+    "abbreviation": "CAU",
+    "conference": "SIAC",
+    "primaryColor": "#C8102E",
+    "secondaryColor": "#000000",
+    "sources": [
+      "https://www.cau.edu/sites/default/files/2026-01/Clark-Atlanta-University-Branding-Guidelines-2025.pdf",
+      "https://www.cau.edu/sites/default/files/2026-02/Fact%20Book%202022-24%20Final%20Updated%202-2026.pdf"
+    ]
+  },
+  {
+    "slug": "fort-valley-state-university",
+    "abbreviation": "FVSU",
+    "conference": "SIAC",
+    "primaryColor": "#205097",
+    "secondaryColor": "#F2C442",
+    "sources": [
+      "https://www.fvsu.edu/content/userfiles/files/FVSU-BrandStandardsGuide_2020.pdf",
+      "https://www.fvsu.edu/content/userfiles/files/2023/01/2022-2023-FVSU-Student-Handbook-Effective-January-13-2023.pdf"
+    ]
+  },
+  {
+    "slug": "interdenominational-theological-center",
+    "abbreviation": "ITC",
+    "conference": "None",
+    "primaryColor": "#006747",
+    "secondaryColor": "#FFFFFF",
+    "sources": [
+      "https://www.itc.edu/about/",
+      "https://www.itc.edu/about/itc-quick-facts/"
+    ]
+  },
+  {
+    "slug": "morehouse-college",
+    "abbreviation": "MC",
+    "conference": "SIAC",
+    "primaryColor": "#840028",
+    "secondaryColor": "#FFFFFF",
+    "sources": [
+      "https://morehouse.edu/hubfs/22200391/Files/PDFs/Brand-Guidelines-March-2021.pdf?hsLang=en",
+      "https://morehouse.edu/life/activities-and-clubs/athletics/"
+    ]
+  },
+  {
+    "slug": "morehouse-school-of-medicine",
+    "abbreviation": "MSM",
+    "conference": "None",
+    "primaryColor": "#3C4F85",
+    "secondaryColor": "#77787B",
+    "sources": [
+      "https://www.msm.edu/Administration/MarketingandCommunications/BrandGuides/MSMBrandBook042314.pdf",
+      "https://www.msm.edu/Administration/MarketingandCommunications/comm_brandandidentity.php"
+    ]
+  },
+  {
+    "slug": "morris-brown-college",
+    "abbreviation": "MBC",
+    "conference": "None",
+    "primaryColor": "#5C068C",
+    "secondaryColor": "#000000",
+    "sources": [
+      "https://morrisbrown.edu/official-logos/",
+      "https://morrisbrown.edu/wp-content/uploads/2025/08/Morris_Brown_College_Policy_Manual.pdf"
+    ]
+  },
+  {
+    "slug": "paine-college",
+    "abbreviation": "PC",
+    "conference": "Independent",
+    "primaryColor": "#432C91",
+    "secondaryColor": "#FFFFFF",
+    "sources": [
+      "https://paine.edu/wp-content/uploads/pcmediadocs/handbook/Paine%20College%20Volume%20I%20-%20Governance%20and%20Administrative%20Organization%20Revised%20July%202025.pdf",
+      "https://paineathletics.com/news/2021/3/31/baseball-paine-college-athletics-becomes-member-of-the-nccaa.aspx",
+      "https://paineathletics.com/sports/womens-basketball/schedule/2025-26"
+    ]
+  },
+  {
+    "slug": "savannah-state-university",
+    "abbreviation": "SSU",
+    "conference": "SIAC",
+    "primaryColor": "#001689",
+    "secondaryColor": "#ED7800",
+    "sources": [
+      "https://savannahstate.edu/university-communications/brand-guidelines/",
+      "https://savannahstate.edu/news/athletics/savannah-state-wins-siac-mens-basketball-championship/"
+    ]
+  },
+  {
+    "slug": "spelman-college",
+    "abbreviation": "SC",
+    "conference": "None",
+    "primaryColor": "#92C1E9",
+    "secondaryColor": "#FFFFFF",
+    "sources": [
+      "https://www.spelman.edu/_1_Docs-and-Files/about/institutional-effectiveness/spelman-student-handbook.pdf",
+      "https://www.spelman.edu/communications-and-external-relations/communications/web-and-digital-strategy/new-website.html",
+      "https://www.spelman.edu/communications-and-external-relations/communications/logos-and-licensing.html"
+    ]
+  },
+  {
+    "slug": "kentucky-state-university",
+    "abbreviation": "KSU",
+    "conference": "SIAC",
+    "primaryColor": "#006938",
+    "secondaryColor": "#FFE71A",
+    "sources": [
+      "https://www.kysu.edu/brand-identity-approved-images/brand-identity/GraphicStandards2019-04172024.pdf",
+      "https://kysu-public.courseleaf.com/undergraduate/university-support-services/intercollegiate-athletics/"
+    ]
+  },
+  {
+    "slug": "simmons-college-of-kentucky",
+    "abbreviation": "SCKY",
+    "conference": "Independent",
+    "primaryColor": "#860000",
+    "secondaryColor": "#AF7E3F",
+    "sources": [
+      "https://simmonscollegeky.edu/branding/",
+      "https://simmonscollegeky.edu/",
+      "https://simmonscollegeky.edu/history/"
+    ]
+  },
+  {
+    "slug": "dillard-university",
+    "abbreviation": "DU",
+    "conference": "HBCUAC",
+    "primaryColor": "#003594",
+    "secondaryColor": "#FFFFFF",
+    "sources": [
+      "https://www.dillard.edu/wp-content/uploads/2023/07/dillard-university-brand-guidelines-2022.pdf",
+      "https://media.hbcuac.org/schools/dillard/"
+    ]
+  },
+  {
+    "slug": "grambling-state-university",
+    "abbreviation": "GSU",
+    "conference": "SWAC",
+    "primaryColor": "#000000",
+    "secondaryColor": "#EAAA00",
+    "sources": [
+      "https://gram.edu/aboutus/administration/advancement/licensing/docs/grambling_marks_07-14-21.pdf",
+      "https://www.gram.edu/aboutus/administration/advancement/licensing/nil.php"
+    ]
+  },
+  {
+    "slug": "southern-university",
+    "abbreviation": "SU",
+    "conference": "SWAC",
+    "primaryColor": "#69B3E7",
+    "secondaryColor": "#FFC72C",
+    "sources": [
+      "https://www.subr.edu/assets/subr/MediaRelations/SU-visual-style-guide_Oct2024.pdf",
+      "https://www.subr.edu/assets/subr/SACSCOCFifthYearReport/FR4.6/WhySURecruitmentMaterial.pdf"
+    ]
+  },
+  {
+    "slug": "southern-university-at-new-orleans",
+    "abbreviation": "SUNO",
+    "conference": "HBCUAC",
+    "primaryColor": "#69B3E7",
+    "secondaryColor": "#FFC72C",
+    "sources": [
+      "https://www.suno.edu/assets/suno/PDFs/Communications/SUNO-Style-Guide.pdf",
+      "https://www.suno.edu/page/quick-facts",
+      "https://media.hbcuac.org/member-schools/"
+    ]
+  },
+  {
+    "slug": "southern-university-at-shreveport",
+    "abbreviation": "SUSLA",
+    "conference": "LCCAC",
+    "primaryColor": "#69B3E7",
+    "secondaryColor": "#FFC72C",
+    "sources": [
+      "https://www.subr.edu/assets/subr/MediaRelations/SU-visual-style-guide_Oct2024.pdf",
+      "https://www.susla.edu/page/mens-basketball",
+      "https://www.susla.edu/news/susla-jaguars-clinch-20252026-lccac-conference-title-030426"
+    ]
+  },
+  {
+    "slug": "southern-university-law-center",
+    "abbreviation": "SULC",
+    "conference": "None",
+    "primaryColor": "#00003C",
+    "secondaryColor": "#BB9645",
+    "sources": [
+      "https://www.sulc.edu/assets/sulc/externalaffairs/Brand-Style-Guide-2.pdf",
+      "https://www.sulc.edu/page/print-collateral"
+    ]
+  },
+  {
+    "slug": "xavier-university-of-louisiana",
+    "abbreviation": "XULA",
+    "conference": "RRAC",
+    "primaryColor": "#FFC530",
+    "secondaryColor": "#FFFFFF",
+    "sources": [
+      "https://xulagold.com/sports/2022/3/18/logos",
+      "https://catalog.xula.edu/content.php?catoid=44&navoid=2402"
+    ]
+  },
+  {
+    "slug": "bowie-state-university",
+    "abbreviation": "BSU",
+    "conference": "CIAA",
+    "primaryColor": "#FFCE00",
+    "secondaryColor": "#1D252C",
+    "sources": [
+      "https://bowiestate.edu/about/administration-and-governance/division-of-university-marketing-communications-and-events/university-relations-and-marketing/brand-and-identity-standards/our-colors.php",
+      "https://bsubulldogs.com/"
+    ]
+  },
+  {
+    "slug": "coppin-state-university",
+    "abbreviation": "CSU",
+    "conference": "MEAC",
+    "primaryColor": "#003056",
+    "secondaryColor": "#FFC915",
+    "sources": [
+      "https://www.coppin.edu/sites/default/files/pdf-library/2021-05/visual_standards_manual.pdf",
+      "https://meacsports.com/"
+    ]
+  },
+  {
+    "slug": "morgan-state-university",
+    "abbreviation": "MSU",
+    "conference": "MEAC",
+    "primaryColor": "#1B4383",
+    "secondaryColor": "#F47937",
+    "sources": [
+      "https://www1.morgan.edu/toolkit/official-colors/",
+      "https://meacsports.com/"
+    ]
+  },
+  {
+    "slug": "university-of-maryland-eastern-shore",
+    "abbreviation": "UMES",
+    "conference": "MEAC",
+    "primaryColor": "#651D32",
+    "secondaryColor": "#888B8D",
+    "sources": [
+      "https://wwwcp.umes.edu/about/brand-colors/",
+      "https://wwwcp.umes.edu/about/complete-brand-guidelines/",
+      "https://meacsports.com/index.aspx?path=umes"
+    ]
+  },
+  {
+    "slug": "harris-stowe-state-university",
+    "abbreviation": "HSSU",
+    "conference": "AMC",
+    "primaryColor": "#45321E",
+    "secondaryColor": "#F3B920",
+    "sources": [
+      "https://go.hssu.edu/ae/aefiles/10/Student_Handbook_HSSU-2015-2016.pdf",
+      "https://hornetsathletics.com/news/2026/2/26/mens-basketball-earns-one-all-conference-selection-multiple-academic-selections.aspx"
+    ]
+  },
+  {
+    "slug": "lincoln-university-missouri",
+    "abbreviation": "LU-MO",
+    "conference": "GLVC",
+    "primaryColor": "#102548",
+    "secondaryColor": "#FFFFFF",
+    "sources": [
+      "https://www.lincolnu.edu/about-lincoln/university-relations/lu_brandguidebook_fall21_final.pdf",
+      "https://www.lincolnu.edu/news/2025/01/glvc-brown-lincoln-university-of-missouri.html"
+    ]
+  },
+  {
+    "slug": "alcorn-state-university",
+    "abbreviation": "ASU",
+    "conference": "SWAC",
+    "primaryColor": "#512D6D",
+    "secondaryColor": "#CC8A00",
+    "sources": [
+      "https://www.alcorn.edu/wp-content/uploads/2025/07/Alcorn-Style-Guide-2025.pdf",
+      "https://www.alcorn.edu/marketing-and-communication/identity-standards/"
+    ]
+  },
+  {
+    "slug": "coahoma-community-college",
+    "abbreviation": "CCC",
+    "conference": "MACCC",
+    "primaryColor": "#570A16",
+    "secondaryColor": "#FFFFFF",
+    "sources": [
+      "https://www.coahomacc.edu/communications/brand/guidelines.html",
+      "https://www.coahomacc.edu/student-life/CCCStudentHandbook20252026.pdf",
+      "https://www.macccathletics.com/sports/fball/2025-26/teams/coahomacommunitycollege"
+    ]
+  },
+  {
+    "slug": "jackson-state",
+    "abbreviation": "JSU",
+    "conference": "SWAC",
+    "primaryColor": "#00205B",
+    "secondaryColor": "#FFFFFF",
+    "sources": [
+      "https://www.jsums.edu/styleguide/jsu-color-scheme/",
+      "https://www.jsums.edu/universitycommunications/files/2020/04/2019-Brand-Style-Guide-FINAL.pdf"
+    ]
+  },
+  {
+    "slug": "mississippi-valley-state-university",
+    "abbreviation": "MVSU",
+    "conference": "SWAC",
+    "primaryColor": "#006F3C",
+    "secondaryColor": "#FFFFFF",
+    "sources": [
+      "https://www.mvsu.edu/sites/default/files/mvsu_styleguide.pdf",
+      "https://www.mvsu.edu/students/campus-life/intercollegiate-athletics"
+    ]
+  },
+  {
+    "slug": "rust-college",
+    "abbreviation": "RC",
+    "conference": "HBCUAC",
+    "primaryColor": "#11188F",
+    "secondaryColor": "#FFFFFF",
+    "sources": [
+      "https://rustcollege.edu/wp-content/uploads/2026/02/Student-Handbook-2024-26-11-Dec.-25-2-1.pdf",
+      "https://media.hbcuac.org/schools/rust-college/",
+      "https://rustcollege.edu/rust-college-baseball-opens-2026-season-ready-to-compete-in-the-hbcuac/"
+    ]
+  },
+  {
+    "slug": "tougaloo-college",
+    "abbreviation": "TOUG",
+    "conference": "HBCUAC",
+    "primaryColor": "#AD1D20",
+    "secondaryColor": "#002A85",
+    "sources": [
+      "https://www.tougaloo.edu/sites/default/files/2022-11/Tougaloo%20College%20_%20Brand%20Standards%20Guide.pdf",
+      "https://media.hbcuac.org/schools/tougaloo/"
+    ]
+  }
+]

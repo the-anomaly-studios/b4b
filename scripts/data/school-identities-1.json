@@ -1,0 +1,285 @@
+[
+  {
+    "slug": "alabama-a-m-university",
+    "abbreviation": "AAMU",
+    "conference": "SWAC",
+    "primaryColor": "#61162D",
+    "secondaryColor": "#FFFFFF",
+    "sources": [
+      "https://www.aamu.edu/about/administrative-offices/marketing-communication-advancement/marketing-public-relations/brand-guidelines.html",
+      "https://swac.org/"
+    ]
+  },
+  {
+    "slug": "alabama-state-university",
+    "abbreviation": "ASU",
+    "conference": "SWAC",
+    "primaryColor": "#000000",
+    "secondaryColor": "#C99700",
+    "sources": [
+      "https://www.brandcolorcode.com/alabama-state-university",
+      "https://swac.org/"
+    ]
+  },
+  {
+    "slug": "bishop-state-community-college",
+    "abbreviation": "BSCC",
+    "conference": "ACCC",
+    "primaryColor": "#0033A0",
+    "secondaryColor": "#FFD100",
+    "sources": [
+      "https://www.bishop.edu/athletics",
+      "https://www.accs.edu/student-life/athletics/"
+    ]
+  },
+  {
+    "slug": "gadsden-state-community-college",
+    "abbreviation": "GSCC",
+    "conference": "ACCC",
+    "primaryColor": "#8B1A1A",
+    "secondaryColor": "#000000",
+    "sources": [
+      "https://www.gadsdenstate.edu/",
+      "https://www.accs.edu/student-life/athletics/"
+    ]
+  },
+  {
+    "slug": "h-councill-trenholm-state-community-college",
+    "abbreviation": "TSCC",
+    "conference": "None",
+    "primaryColor": "#006633",
+    "secondaryColor": "#FFD700",
+    "sources": [
+      "https://www.trenholmstate.edu/",
+      "https://en.wikipedia.org/wiki/Alabama_Community_College_Conference"
+    ]
+  },
+  {
+    "slug": "j-f-drake-state-community-and-technical-college",
+    "abbreviation": "DSCTC",
+    "conference": "ACCC",
+    "primaryColor": "#003366",
+    "secondaryColor": "#E87722",
+    "sources": [
+      "https://drakestate.edu/",
+      "https://en.wikipedia.org/wiki/Alabama_Community_College_Conference"
+    ]
+  },
+  {
+    "slug": "lawson-state-community-college",
+    "abbreviation": "LSCC",
+    "conference": "ACCC",
+    "primaryColor": "#0033A0",
+    "secondaryColor": "#FFD100",
+    "sources": [
+      "https://www.lawsonstate.edu/",
+      "https://www.accs.edu/student-life/athletics/"
+    ]
+  },
+  {
+    "slug": "miles-college",
+    "abbreviation": "MIC",
+    "conference": "SIAC",
+    "primaryColor": "#4B2E83",
+    "secondaryColor": "#F2A900",
+    "sources": [
+      "https://www.miles.edu/",
+      "https://thesiac.com/sports/2018/7/9/gen_0709184210.aspx"
+    ]
+  },
+  {
+    "slug": "oakwood-university",
+    "abbreviation": "OU",
+    "conference": "HBCUAC",
+    "primaryColor": "#003366",
+    "secondaryColor": "#FDB913",
+    "sources": [
+      "https://www2.oakwood.edu/",
+      "https://media.hbcuac.org/member-schools/"
+    ]
+  },
+  {
+    "slug": "selma-university",
+    "abbreviation": "SELU",
+    "conference": "Independent",
+    "primaryColor": "#4B0082",
+    "secondaryColor": "#FFD700",
+    "sources": [
+      "https://selmau.edu/"
+    ]
+  },
+  {
+    "slug": "shelton-state-community-college",
+    "abbreviation": "SSCC",
+    "conference": "ACCC",
+    "primaryColor": "#003087",
+    "secondaryColor": "#C8102E",
+    "sources": [
+      "https://www.sheltonstate.edu/",
+      "https://www.accs.edu/student-life/athletics/"
+    ]
+  },
+  {
+    "slug": "stillman-college",
+    "abbreviation": "STC",
+    "conference": "HBCUAC",
+    "primaryColor": "#0033A0",
+    "secondaryColor": "#FFFFFF",
+    "sources": [
+      "https://stillman.edu/",
+      "https://media.hbcuac.org/member-schools/"
+    ]
+  },
+  {
+    "slug": "talladega-college",
+    "abbreviation": "TGC",
+    "conference": "HBCUAC",
+    "primaryColor": "#9E1B32",
+    "secondaryColor": "#003366",
+    "sources": [
+      "https://www.talladega.edu/",
+      "https://media.hbcuac.org/member-schools/"
+    ]
+  },
+  {
+    "slug": "tuskegee-university",
+    "abbreviation": "TU",
+    "conference": "SIAC",
+    "primaryColor": "#8C1D40",
+    "secondaryColor": "#C99700",
+    "sources": [
+      "https://www.tuskegee.edu/",
+      "https://thesiac.com/sports/2018/7/9/gen_0709184210.aspx"
+    ]
+  },
+  {
+    "slug": "arkansas-baptist-college",
+    "abbreviation": "ABC",
+    "conference": "Independent",
+    "primaryColor": "#4B2E83",
+    "secondaryColor": "#F2A900",
+    "sources": [
+      "https://www.arkansasbaptist.edu/"
+    ]
+  },
+  {
+    "slug": "philander-smith-college",
+    "abbreviation": "PSU",
+    "conference": "HBCUAC",
+    "primaryColor": "#006747",
+    "secondaryColor": "#C99700",
+    "sources": [
+      "https://www.philander.edu/",
+      "https://media.hbcuac.org/member-schools/"
+    ]
+  },
+  {
+    "slug": "shorter-college",
+    "abbreviation": "SHC",
+    "conference": "None",
+    "primaryColor": "#003087",
+    "secondaryColor": "#C8102E",
+    "sources": [
+      "https://www.shortercollege.edu/"
+    ]
+  },
+  {
+    "slug": "university-of-arkansas-at-pine-bluff",
+    "abbreviation": "UAPB",
+    "conference": "SWAC",
+    "primaryColor": "#000000",
+    "secondaryColor": "#CFB53B",
+    "sources": [
+      "https://www.uapb.edu/",
+      "https://swac.org/"
+    ]
+  },
+  {
+    "slug": "howard-university",
+    "abbreviation": "HU",
+    "conference": "MEAC",
+    "primaryColor": "#003A63",
+    "secondaryColor": "#E51937",
+    "sources": [
+      "https://www.howard.edu/",
+      "https://meacsports.com/"
+    ]
+  },
+  {
+    "slug": "university-of-the-district-of-columbia",
+    "abbreviation": "UDC",
+    "conference": "ECC",
+    "primaryColor": "#E31C3D",
+    "secondaryColor": "#002D62",
+    "sources": [
+      "https://www.udc.edu/",
+      "https://www.ececsports.com/"
+    ]
+  },
+  {
+    "slug": "university-of-the-district-of-columbia-david-a-clarke-school-of-law",
+    "abbreviation": "UDCL",
+    "conference": "None",
+    "primaryColor": "#E31C3D",
+    "secondaryColor": "#002D62",
+    "sources": [
+      "https://www.law.udc.edu/",
+      "https://www.udc.edu/"
+    ]
+  },
+  {
+    "slug": "delaware-state-university",
+    "abbreviation": "DSU",
+    "conference": "MEAC",
+    "primaryColor": "#EE3124",
+    "secondaryColor": "#007DC3",
+    "sources": [
+      "https://www.desu.edu/",
+      "https://meacsports.com/"
+    ]
+  },
+  {
+    "slug": "bethune-cookman",
+    "abbreviation": "BCU",
+    "conference": "SWAC",
+    "primaryColor": "#6F263D",
+    "secondaryColor": "#B9975B",
+    "sources": [
+      "https://www.cookman.edu/",
+      "https://swac.org/"
+    ]
+  },
+  {
+    "slug": "edward-waters-college",
+    "abbreviation": "EWU",
+    "conference": "SIAC",
+    "primaryColor": "#4B2E83",
+    "secondaryColor": "#F15A22",
+    "sources": [
+      "https://www.ew.edu/",
+      "https://thesiac.com/sports/2018/7/9/gen_0709184210.aspx"
+    ]
+  },
+  {
+    "slug": "florida-a-and-m",
+    "abbreviation": "FAMU",
+    "conference": "SWAC",
+    "primaryColor": "#F4811F",
+    "secondaryColor": "#008344",
+    "sources": [
+      "https://static.famuathletics.com/custompages/pdf9/4488310.pdf",
+      "https://swac.org/"
+    ]
+  },
+  {
+    "slug": "florida-memorial-university",
+    "abbreviation": "FMU",
+    "conference": "SUN",
+    "primaryColor": "#003DA5",
+    "secondaryColor": "#FE5000",
+    "sources": [
+      "https://athletics.fmu.edu/sports/2013/8/23/GEN_0823134822.aspx",
+      "https://thesunconference.com/sports/2025/7/19/_floridamemorial.aspx"
+    ]
+  }
+]
