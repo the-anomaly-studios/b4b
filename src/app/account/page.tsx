@@ -1,6 +1,14 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { redirect } from "next/navigation";
-import { LogOut, ShieldCheck, UserRound } from "lucide-react";
+import {
+  ArrowRight,
+  Clock3,
+  Film,
+  LogOut,
+  ShieldCheck,
+  UserRound,
+} from "lucide-react";
 import { signOut } from "@/app/auth/actions";
 import { ProfileForm } from "@/components/profile-form";
 import { schools } from "@/lib/data";
@@ -25,11 +33,21 @@ export default async function AccountPage() {
     redirect("/sign-in?next=/account");
   }
 
-  const { data: profile } = await supabase
-    .from("profiles")
-    .select("username, avatar_url, school_id")
-    .eq("id", user.id)
-    .maybeSingle();
+  const [{ data: profile }, { data: recentUploads }] = await Promise.all([
+    supabase
+      .from("profiles")
+      .select("username, avatar_url, school_id")
+      .eq("id", user.id)
+      .maybeSingle(),
+    supabase
+      .from("videos")
+      .select(
+        "id, title, slug, status, error_message, created_at, mux_playback_id",
+      )
+      .eq("uploader_id", user.id)
+      .order("created_at", { ascending: false })
+      .limit(10),
+  ]);
 
   const fallbackUsername =
     typeof user.user_metadata.username === "string"
@@ -101,6 +119,75 @@ export default async function AccountPage() {
             </p>
           </div>
         </aside>
+      </section>
+
+      <section className="mx-auto max-w-[1200px] px-4 pb-16 sm:px-6 lg:px-10">
+        <div className="flex flex-col gap-5 border-t border-ink pt-10 sm:flex-row sm:items-end sm:justify-between">
+          <div>
+            <p className="section-kicker">Your contributions</p>
+            <h2 className="font-display text-4xl font-extrabold uppercase">
+              Performance uploads
+            </h2>
+          </div>
+          <Link
+            href="/upload"
+            className="inline-flex min-h-11 items-center gap-2 self-start bg-ink px-5 text-sm font-bold text-canvas hover:bg-accent sm:self-auto"
+          >
+            <Film aria-hidden="true" size={17} />
+            Upload a performance
+          </Link>
+        </div>
+
+        {recentUploads && recentUploads.length > 0 ? (
+          <ul className="mt-6 border-t border-ink">
+            {recentUploads.map((upload) => (
+              <li
+                key={upload.id}
+                className="grid gap-4 border-b border-ink/20 py-5 sm:grid-cols-[1fr_auto] sm:items-center"
+              >
+                <div>
+                  <p className="font-display text-2xl font-extrabold uppercase">
+                    {upload.title}
+                  </p>
+                  <p className="mt-1 flex items-center gap-2 text-xs font-bold uppercase tracking-[0.08em] text-muted">
+                    <Clock3 aria-hidden="true" size={14} />
+                    {upload.status.replaceAll("_", " ")}
+                  </p>
+                  {upload.error_message ? (
+                    <p className="mt-2 text-sm text-negative">
+                      {upload.error_message}
+                    </p>
+                  ) : null}
+                </div>
+                {upload.status === "ready" && upload.mux_playback_id ? (
+                  <Link
+                    href={`/performances/${upload.slug}`}
+                    className="inline-flex items-center gap-2 text-sm font-bold text-positive hover:underline"
+                  >
+                    Watch performance
+                    <ArrowRight aria-hidden="true" size={17} />
+                  </Link>
+                ) : (
+                  <span className="text-xs font-bold uppercase tracking-[0.08em] text-muted">
+                    {upload.status === "errored"
+                      ? "Needs attention"
+                      : "Mux is processing"}
+                  </span>
+                )}
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <div className="mt-6 border-y border-ink py-10">
+            <p className="font-display text-3xl font-extrabold uppercase">
+              No uploads yet
+            </p>
+            <p className="mt-2 max-w-xl text-sm leading-6 text-muted">
+              Share a field show, stands battle, or drumline moment with the
+              community.
+            </p>
+          </div>
+        )}
       </section>
     </main>
   );

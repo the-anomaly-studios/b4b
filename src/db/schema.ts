@@ -67,9 +67,14 @@ export const videos = pgTable(
     title: varchar("title", { length: 180 }).notNull(),
     slug: varchar("slug", { length: 220 }).notNull(),
     description: text("description"),
+    muxUploadId: varchar("mux_upload_id", { length: 120 }),
     muxAssetId: varchar("mux_asset_id", { length: 120 }),
     muxPlaybackId: varchar("mux_playback_id", { length: 120 }),
     thumbnailUrl: text("thumbnail_url"),
+    status: varchar("status", { length: 32 })
+      .notNull()
+      .default("waiting_for_upload"),
+    errorMessage: text("error_message"),
     uploaderId: uuid("uploader_id")
       .notNull()
       .references(() => profiles.id, { onDelete: "cascade" }),
@@ -87,11 +92,13 @@ export const videos = pgTable(
   },
   (table) => [
     uniqueIndex("videos_slug_unique").on(table.slug),
+    uniqueIndex("videos_mux_upload_id_unique").on(table.muxUploadId),
     uniqueIndex("videos_mux_asset_id_unique").on(table.muxAssetId),
     index("videos_school_id_idx").on(table.schoolId),
     index("videos_uploader_id_idx").on(table.uploaderId),
     index("videos_created_at_idx").on(table.createdAt),
     index("videos_upvote_count_idx").on(table.upvoteCount),
+    index("videos_status_idx").on(table.status),
   ],
 );
 
